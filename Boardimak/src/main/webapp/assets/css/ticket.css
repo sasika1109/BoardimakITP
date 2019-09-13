@@ -79,21 +79,28 @@
     border-right-color:blue;
     padding-left:5px;
     padding-bottom:0.05px; 
-    color:#fff;
+   
     background-color: #e8e8e8;
 }
 .reply p{
 	 color:black;
+} 
+.reply h8{
+	font-weight:bold;
 }
 .message{
 	margin-top:8px;
 	margin-right: 80px;
+	margin-bottom:8px;
 	padding-left:5px;
     padding-bottom:0.05px; 
 	border-radius:5px;
 	border-color: black;
-	background-color:#5eff5e;
-	
+	color:#fff;
+	background-color:#5eff5e;	
+}
+.message h8{
+	font-weight:bold;
 }
 
 .icon-edit , .icon-delete{

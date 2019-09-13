@@ -19,10 +19,10 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/dashboard.css">
-	<link rel="stylesheet" href="assets/css/toggle-switch.css">
-    <link rel="stylesheet" href="assets/css/owner-property.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+	<link rel="stylesheet" href="../assets/css/toggle-switch.css">
+    <link rel="stylesheet" href="../assets/css/owner-property.css">
 
     <title>Admin</title>
 </head>
@@ -33,32 +33,32 @@
                     <div class="left-panel">
                         <div class="wrapper-profile">
                             <div class="profile-picture">
-                                <img src="assets/icons/profile-pic.png" alt="Profile picture">
+                                <img src="../assets/icons/profile-pic.png" alt="Profile picture">
                             </div>
                             <div class="profile-text">
                                 <h5>John Snow</h5>
                                 <p>Admin</p>
                             </div>
                             <div class="profile-notification">
-                                <img src="assets/icons/notification-icon.png" alt="Notification Icon">
+                                <img src="../assets/icons/notification-icon.png" alt="Notification Icon">
                             </div>
                         </div>
 
                         <div class="wrapper-menu">
                             <ul>
-                                <a href=""><li><img src="assets/icons/dashboard-icon.png" alt="Dashboard Icon">Dashboard</li></a>
-                                <a href=""><li class="active"><img src="assets/icons/property-icon.png" alt="Properties Icon">Properties</li></a>
-                                <a href="users.html"><li><img src="assets/icons/users-icon.png" alt="Users Icon">Users</li></a>
-                                <a href=""><li><img src="assets/icons/booking-icon.png" alt="Bookings Icon">Bookings</li></a>
-                                <a href="all-promotions.html"><li><img src="assets/icons/promotions-icon.png" alt="Promotions Icon">Promotions</li></a>
-								<a href=""><li><img src="assets/icons/content-management-icon.png" alt="Contemtn Management Icon">Content Management</li></a>                                
-                                <a href=""><li><img src="assets/icons/payment-icon.png" alt="Payment Icon">Payments</li></a>
-                                <a href=""><li><img src="assets/icons/support-icon.png" alt="Support Icon">Support</li></a>
+                                <a href=""><li><img src="../assets/icons/dashboard-icon.png" alt="Dashboard Icon">Dashboard</li></a>
+                                <a href=""><li class="active"><img src="../assets/icons/property-icon.png" alt="Properties Icon">Properties</li></a>
+                                <a href="users.html"><li><img src="../assets/icons/users-icon.png" alt="Users Icon">Users</li></a>
+                                <a href=""><li><img src="../assets/icons/booking-icon.png" alt="Bookings Icon">Bookings</li></a>
+                                <a href="all-promotions.html"><li><img src="../assets/icons/promotions-icon.png" alt="Promotions Icon">Promotions</li></a>
+								<a href=""><li><img src="../assets/icons/content-management-icon.png" alt="Contemtn Management Icon">Content Management</li></a>                                
+                                <a href=""><li><img src="../assets/icons/payment-icon.png" alt="Payment Icon">Payments</li></a>
+                                <a href=""><li><img src="../assets/icons/support-icon.png" alt="Support Icon">Support</li></a>
                             </ul>
                         </div>
 
                         <div class="wrapper-help">
-                            <a href=""><img src="assets/icons/help-icon.png" alt="Help icon">Help</a>
+                            <a href=""><img src="../assets/icons/help-icon.png" alt="Help icon">Help</a>
                         </div>
                     </div>
                     <div class="right-panel">
@@ -112,24 +112,24 @@
                                             <ul class="list-actions">
                                                   <li>
                                                   	 <a href="/owner/edit-property?id=${property.id}">
-                                                       <img src="assets/icons/home-edit-icon.png" width="22px" height="22px" alt="Edit user icon">
+                                                       <img src="../assets/icons/home-edit-icon.png" width="22px" height="22px" alt="Edit user icon">
                                                  	 </a>
                                                   </li>
                                                 <li>
                                                     <c:if test = "${property.status == 'Active'}">
                                         				<a style="margin-left:5px;" href="/admin/property/DeactivateProperty?id=${property.id}">
-                                                			 <img src="assets/icons/deactivate.png" width="26px" height="26px" alt="Edit Property icon">
+                                                			 <img src="../assets/icons/deactivate.png" width="26px" height="26px" alt="Edit Property icon">
                                             			</a>
                                         			</c:if>
                                         			<c:if test = "${property.status == 'Offline'}">
                                         				<a style="margin-left:5px;" href="/admin/property/ActivateProperty?id=${property.id}">
-                                                			 <img src="assets/icons/activate.png" width="26px" height="26px" alt="Edit Property icon">
+                                                			 <img src="../assets/icons/activate.png" width="26px" height="26px" alt="Edit Property icon">
                                             			</a>
                                         			</c:if>
                                                 </li>
                                                	<li>
                                                   	 <a style="margin-left:5px;" href="/admin/delete-property?id=${property.id}">
-                                                		 <img src="assets/icons/delete-prop-icon.png" width="26px" height="26px" alt="Delete Property icon">
+                                                		 <img src="../assets/icons/delete-prop-icon.png" width="26px" height="26px" alt="Delete Property icon">
                                             		</a>
                                                   </li>
                                                 

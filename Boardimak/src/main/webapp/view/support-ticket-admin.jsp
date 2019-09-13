@@ -148,15 +148,14 @@
 													</c:if> <c:if test="${user.status == 'Resloved'}">
 														<h8 class="txt-red">Resolved</h8>
 													</c:if>
-													</li></td>
 												<td>
 													<ul class="list-actions">
 														<a href="/edit-user?id=${user.id }"><li><img
-																src="assets/icons/edit-user-icon.png"
-																alt="Edit user icon "></li></a>
+																src="assets/icons/edit-user-icon.png" style = "width:22px; height:22px;"
+																alt="Edit user icon" ></li></a>
 														<li></li>
 														<a href="/delete-ticket?id=${user.id }"><li><img
-																src="assets/icons/delete-icon.png"
+																src="assets/icons/delete-icon.png" style = "width:22px; height:22px;"
 																alt="Delete user icon"></li></a>
 													</ul>
 												</td>

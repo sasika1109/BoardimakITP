@@ -5,7 +5,10 @@ import java.io.IOException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.MailException;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,15 +19,21 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.boardimak.main.model.ReplyTicket;
 import com.boardimak.main.model.Ticket;
+import com.boardimak.main.services.NotificationService;
 import com.boardimak.main.services.TicketReplyService;
 import com.boardimak.main.services.TicketService;
 @Controller
 public class TicketController {
 	
+	private Logger logger = LoggerFactory.getLogger(TicketController.class);
+	
 	@Autowired
 	private TicketService userService;
 	@Autowired
 	private  TicketReplyService ticketreplyservice;
+	@Autowired
+	private NotificationService notificationService;
+	
 
 	/* -----------------------------USER CONTROLE--------------------*/
 	@GetMapping("/welcome")
@@ -49,6 +58,12 @@ public class TicketController {
 	public String registerUser(@ModelAttribute Ticket user,BindingResult bindingResult,HttpServletRequest request) {
 		userService.saveMyUser(user);
 		request.setAttribute("mode", "MODE_HOME");
+		try {
+			Ticket ticket = new Ticket();
+			notificationService.sendNotification(ticket);	
+		}catch(MailException e) {
+			logger.info("Error sending Email" + e.getMessage());
+		}
 		return "support-ticket";
 	}
 

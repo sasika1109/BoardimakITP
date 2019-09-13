@@ -19,9 +19,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/dashboard.css">
-    <link rel="stylesheet" href="assets/css/owner-property.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <link rel="stylesheet" href="../assets/css/owner-property.css">
 
     <title>Owner</title>
 </head>
@@ -32,25 +32,25 @@
                     <div class="left-panel">
                         <div class="wrapper-profile">
                             <div class="profile-picture">
-                                <img src="assets/icons/profile-pic.png" alt="Profile picture">
+                                <img src="../assets/icons/profile-pic.png" alt="Profile picture">
                             </div>
                             <div class="profile-text">
                                 <h5>John Snow</h5>
                                 <p>Property Owner</p>
                             </div>
                             <div class="profile-notification">
-                                <img src="assets/icons/notification-icon.png" alt="Notification Icon">
+                                <img src="../assets/icons/notification-icon.png" alt="Notification Icon">
                             </div>
                         </div>
 
                         <div class="wrapper-menu">
                             <ul>
-                                <a href=""><li><img src="assets/icons/dashboard-icon.png" alt="Dashboard Icon">Dashboard</li></a>
-                                <a href=""><li class="active"><img src="assets/icons/property-icon.png" alt="Properties Icon">Properties</li></a>
-                                <a href=""><li><img src="assets/icons/booking-icon.png" alt="Bookings Icon">Bookings</li></a>
-                                <a href="all-promotions.html"><li><img src="assets/icons/promotions-icon.png" alt="Promotions Icon">Promotions</li></a>
-                                <a href=""><li><img src="assets/icons/payment-icon.png" alt="Payment Icon">Payments</li></a>
-                                <a href=""><li><img src="assets/icons/support-icon.png" alt="Support Icon">Support</li></a>
+                                <a href=""><li><img src="../assets/icons/dashboard-icon.png" alt="Dashboard Icon">Dashboard</li></a>
+                                <a href=""><li class="active"><img src="../assets/icons/property-icon.png" alt="Properties Icon">Properties</li></a>
+                                <a href=""><li><img src="../assets/icons/booking-icon.png" alt="Bookings Icon">Bookings</li></a>
+                                <a href="all-promotions.html"><li><img src="../assets/icons/promotions-icon.png" alt="Promotions Icon">Promotions</li></a>
+                                <a href=""><li><img src="../assets/icons/payment-icon.png" alt="Payment Icon">Payments</li></a>
+                                <a href=""><li><img src="../assets/icons/support-icon.png" alt="Support Icon">Support</li></a>
                             </ul>
                         </div>
 
@@ -68,7 +68,7 @@
                         <div class="dashboard-body">
                           
                             
-                            <img class="property-img" src="assets/images/houseImg.png" alt="House images">
+                            <img class="property-img" src="../assets/images/houseImg.png" alt="House images">
                             <br>
                             <h4 class="mdl-text">No properties available yet.</h4>
                             <p class="mdl-text">Click the button below to add your first property</p>
